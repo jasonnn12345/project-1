@@ -17,6 +17,7 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.wind.speed + " Km/H";
 
     document.querySelector(".weather").style.display = "block";
+    document.querySelector(".error").style.display = "none";
   }
 }
 searchBtn.addEventListener("click", () => {
